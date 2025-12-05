@@ -5,7 +5,7 @@ You can use and modify for any use.
 <b> Inspired by [https://codepen.io/boytchev/pen/NPNabOQ](https://codepen.io/boytchev/pen/RNPyxoQ)</b>
 
 ## Example scene
-You can change the color by export variable before launching the scene or by shader parameters while scene is running.
+You can change the color by export variable before launching the scene or by shader parameters while scene is running. The speed of faces movement can be changed inside of shader parameters.
 
 ## .exe and gif of rendering
 To see more easily the result (for example if you don't have Godot), you can download the .7z file that is part of the repository files, then uncompress it. In it, you will find a .exe, launch it. <br> If you don't want to download the .exe, <br>
