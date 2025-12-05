@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://qt3tpu8p0dee"]
+
+[ext_resource type="Script" uid="uid://hfoy1g8ojixy" path="res://node_3d.gd" id="1_a202f"]
+[ext_resource type="Shader" uid="uid://bk0n8qrhv522w" path="res://node_3d.gdshader" id="2_noarx"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a0tk4"]
+render_priority = 0
+shader = ExtResource("2_noarx")
+shader_parameter/speed = 9.235
+shader_parameter/color_base = Color(0.25, 0.41, 0.88, 1)
+shader_parameter/time_scale = 1.0
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_a202f")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+fov = 30.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_a0tk4")
