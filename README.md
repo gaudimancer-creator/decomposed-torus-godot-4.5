@@ -2,7 +2,7 @@
 A simple Godot 4.5 code with a decomposed torus with each face shaking and moving with little speed.
 <br>
 You can use and modify for any use. 
-<b> Inspired by [https://codepen.io/boytchev/pen/NPNabOQ](https://codepen.io/boytchev/pen/RNPyxoQ)</b>
+<b> Inspired by https://codepen.io/boytchev/pen/RNPyxoQ </b>
 
 ## Example scene
 You can change the color by export variable before launching the scene or by shader parameters while scene is running. The speed of faces movement can be changed inside of shader parameters.
